@@ -16,14 +16,18 @@
 </head>
 <body>
 <header class="header">
-    <div class="container">
-        <div class="header__top-panel">
-            <a href="#" class="header__logo"><img src="img/logo.png" alt=""></a>
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="img/header-bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="header__top-panel">
+        <div class="container">
+            <a href="/" class="header__logo"><img src="img/logo.png" alt=""></a>
             <div class="header__menu">
                 <ul>
                     <li><a href="#" class="header__menu-item">Головна</a></li>
                     <li>
-                        <a href="#" class="header__menu-item header__menu-item--dropdown">Послуги <img src="#"></a>
+                        <a href="#" class="header__menu-item header__menu-item--dropdown">Послуги <img src="img/bottom-arrow.png"></a>
                         <ul class="header__dropdown-menu">
                             <li><a href="#" class="header__dropdown-menu-item">Пункт 1</a></li>
                             <li><a href="#" class="header__dropdown-menu-item">Пункт 2</a></li>
@@ -32,21 +36,24 @@
                     </li>
                     <li><a href="#" class="header__menu-item">Кар’єра</a></li>
                     <li><a href="#" class="header__menu-item">Контакти</a></li>
+                    <hr>
                 </ul>
             </div>
             <div class="header__phone">
-                <span class="header__phone-title"></span>
+                <span class="header__phone-title">Телефон гарячої лінії:</span>
                 <a href="tel:+380532655036" class="header__phone-value">+38 (0532) 65 50 36</a>
             </div>
             <div class="header__language">
-                <span class="header__language-item"><img src="#" alt=""> UA</span>
-                <span class="header__language-item"><img src="#" alt=""> RU</span>
+                <a href="#" class="header__language-item"><span class="lng-images"><span class="ua-blue"></span><span class="ua-yellow"></span></span>UA</a>
+                <a href="#" class="header__language-item header__language-item--inactive"><span class="lng-images"><span class="ru-white"></span><span class="ru-blue"></span><span class="ru-red"></span></span>RU</a>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="header__big-part">
             <h1 class="header__title">GPL The Future</h1>
-            <span class="header__subtitle">Група компаній з виробництва, дистрибуції та продажу мастильних матеріалів, технічних рідин та автозапчастин на легкові та вантажні автомобілі</span>
-            <a href="#" class="header__video-button">Переглянути відео</a>
+            <span class="header__subtitle">Група компаній з виробництва, дистрибуції та продажу мастильних матеріалів,<br>технічних рідин та автозапчастин на легкові та вантажні автомобілі</span>
+            <a data-fancybox href="https://www.youtube.com/watch?v=lWzKXGPUIfY" class="header__video-button">Переглянути відео</a>
         </div>
     </div>
 </header>
